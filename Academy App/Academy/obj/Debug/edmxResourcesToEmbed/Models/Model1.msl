@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyAcademyModelStoreContainer" CdmEntityContainer="MyAcademyEntities">
+    <EntitySetMapping Name="Academy_info">
+      <EntityTypeMapping TypeName="MyAcademyModel.Academy_info">
+        <MappingFragment StoreEntitySet="Academy_info">
+          <ScalarProperty Name="ID_academy" ColumnName="ID_academy" />
+          <ScalarProperty Name="Name_academy" ColumnName="Name_academy" />
+          <ScalarProperty Name="phone_academy" ColumnName="phone_academy" />
+          <ScalarProperty Name="email_academy" ColumnName="email_academy" />
+          <ScalarProperty Name="Adress_academy" ColumnName="Adress_academy" />
+          <ScalarProperty Name="Status_academy" ColumnName="Status_academy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classrooms">
+      <EntityTypeMapping TypeName="MyAcademyModel.Classroom">
+        <MappingFragment StoreEntitySet="Classroom">
+          <ScalarProperty Name="ID_room" ColumnName="ID_room" />
+          <ScalarProperty Name="Name_room" ColumnName="Name_room" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="Status_room" ColumnName="Status_room" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Education_Program">
+      <EntityTypeMapping TypeName="MyAcademyModel.Education_Program">
+        <MappingFragment StoreEntitySet="Education_Program">
+          <ScalarProperty Name="ID_edu" ColumnName="ID_edu" />
+          <ScalarProperty Name="Name_edu" ColumnName="Name_edu" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Status_edu" ColumnName="Status_edu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="MyAcademyModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="ID_emp" ColumnName="ID_emp" />
+          <ScalarProperty Name="Name_emp" ColumnName="Name_emp" />
+          <ScalarProperty Name="Surname_emp" ColumnName="Surname_emp" />
+          <ScalarProperty Name="Email_emp" ColumnName="Email_emp" />
+          <ScalarProperty Name="Phone_emp" ColumnName="Phone_emp" />
+          <ScalarProperty Name="Speciality_emp" ColumnName="Speciality_emp" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Status_emp" ColumnName="Status_emp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee_Group">
+      <EntityTypeMapping TypeName="MyAcademyModel.Employee_Group">
+        <MappingFragment StoreEntitySet="Employee_Group">
+          <ScalarProperty Name="ID_em_group" ColumnName="ID_em_group" />
+          <ScalarProperty Name="EmpoleeID" ColumnName="EmpoleeID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="MyAcademyModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="ID_group" ColumnName="ID_group" />
+          <ScalarProperty Name="Name_group" ColumnName="Name_group" />
+          <ScalarProperty Name="ClassroomID" ColumnName="ClassroomID" />
+          <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+          <ScalarProperty Name="Status_group" ColumnName="Status_group" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Positions">
+      <EntityTypeMapping TypeName="MyAcademyModel.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="ID_pos" ColumnName="ID_pos" />
+          <ScalarProperty Name="Name_pos" ColumnName="Name_pos" />
+          <ScalarProperty Name="Status_pos" ColumnName="Status_pos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scores">
+      <EntityTypeMapping TypeName="MyAcademyModel.Score">
+        <MappingFragment StoreEntitySet="Scores">
+          <ScalarProperty Name="ID_score" ColumnName="ID_score" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="Score1" ColumnName="Score" />
+          <ScalarProperty Name="Status_score" ColumnName="Status_score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="MyAcademyModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="ID_stud" ColumnName="ID_stud" />
+          <ScalarProperty Name="Name_stud" ColumnName="Name_stud" />
+          <ScalarProperty Name="Surname_stud" ColumnName="Surname_stud" />
+          <ScalarProperty Name="Email_stud" ColumnName="Email_stud" />
+          <ScalarProperty Name="Phone_stud" ColumnName="Phone_stud" />
+          <ScalarProperty Name="Fee" ColumnName="Fee" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="Status_stud" ColumnName="Status_stud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="MyAcademyModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="ID_task" ColumnName="ID_task" />
+          <ScalarProperty Name="Name_task" ColumnName="Name_task" />
+          <ScalarProperty Name="DeadLine" ColumnName="DeadLine" />
+          <ScalarProperty Name="Status_task" ColumnName="Status_task" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Task_Group">
+      <EntityTypeMapping TypeName="MyAcademyModel.Task_Group">
+        <MappingFragment StoreEntitySet="Task_Group">
+          <ScalarProperty Name="ID_task_gr" ColumnName="ID_task_gr" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="Status_task_gr" ColumnName="Status_task_gr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
